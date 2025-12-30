@@ -1,7 +1,7 @@
 // Detecta automáticamente el entorno
 // Prioriza la variable de entorno (para poder conectar local a prod si se quiere)
 // Si no hay variable, usa localhost en desarrollo o la URL de Render en producción
-const BASE_URL = 'https://vecar-backend.onrender.com/api';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://vecar-backend.onrender.com/api';
 console.log('🔍 API BASE_URL:', BASE_URL);
 console.log('🔍 NODE_ENV:', process.env.NODE_ENV);
 console.log('🔍 REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
