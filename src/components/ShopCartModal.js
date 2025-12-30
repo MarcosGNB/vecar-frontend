@@ -383,7 +383,7 @@ const ShopCartModal = ({ userId, isOpen, onClose, isAuthenticated = false }) => 
                         onChange={(e) => setDeliveryOption(e.target.value)}
                       />
                       <div className="p-3 text-center text-xs font-bold uppercase hover:bg-gray-100 peer-checked:bg-gray-900 peer-checked:text-white transition-all">
-                        Retiro del Taller
+                        Retiro del Local
                       </div>
                     </label>
                   </div>
@@ -416,7 +416,7 @@ const ShopCartModal = ({ userId, isOpen, onClose, isAuthenticated = false }) => 
 
               {deliveryOption === 'pickup' && paymentMethod === 'Efectivo' && (
                 <div className="bg-gray-900 text-white p-4">
-                  <p className="font-bold text-sm mb-1 uppercase">Te esperamos en el taller</p>
+                  <p className="font-bold text-sm mb-1 uppercase">Te esperamos en el Local</p>
                   <p className="text-xs text-gray-300">
                     <a
                       href="https://maps.app.goo.gl/1LWoLgWijYNqWoK7A"
@@ -437,13 +437,13 @@ const ShopCartModal = ({ userId, isOpen, onClose, isAuthenticated = false }) => 
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between items-center">
                       <span className="font-bold text-gray-600">BANCO:</span>
-                      <span className="font-mono">Familiar</span>
+                      <span className="font-mono">UENO Bank</span>
                     </div>
 
                     <div className="flex justify-between items-center">
                       <span className="font-bold text-gray-600">Nº CUENTA:</span>
                       <div className="flex items-center">
-                        <span className="font-mono mr-2">818335032</span>
+                        <span className="font-mono mr-2">619215997</span>
                         <button onClick={() => copyToClipboard('818335032', 'accountNumber')} className="text-gray-900 hover:text-red-600">
                           {copied.accountNumber ? <FaCheck className="text-green-600" /> : <FaCopy />}
                         </button>
@@ -453,7 +453,7 @@ const ShopCartModal = ({ userId, isOpen, onClose, isAuthenticated = false }) => 
                     <div className="flex justify-between items-center">
                       <span className="font-bold text-gray-600">ALIAS:</span>
                       <div className="flex items-center">
-                        <span className="font-mono mr-2">0976532870</span>
+                        <span className="font-mono mr-2">6211990</span>
                         <button onClick={() => copyToClipboard('0976532870', 'alias')} className="text-gray-900 hover:text-red-600">
                           {copied.alias ? <FaCheck className="text-green-600" /> : <FaCopy />}
                         </button>
@@ -462,7 +462,7 @@ const ShopCartModal = ({ userId, isOpen, onClose, isAuthenticated = false }) => 
 
                     <div className="flex justify-between items-center">
                       <span className="font-bold text-gray-600">TITULAR:</span>
-                      <span className="font-mono text-xs">ANGELO DAVALOS ESTIGARRIBIA</span>
+                      <span className="font-mono text-xs">Carlos Velazquez</span>
                     </div>
                   </div>
 
